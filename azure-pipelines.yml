@@ -6,7 +6,6 @@
 pool: mipc
 
 steps:
-- task: Maven@3
 - script: 
     echo Hola Mundo
   displayName: 'Hola Mundo'
