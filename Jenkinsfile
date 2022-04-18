@@ -1,4 +1,6 @@
 node {
-  checkout scm
-  sh "echo Hola Mundo"
+  stage('Example') {
+    checkout scm
+    sh "echo Hola Mundo"
+  }
 }
