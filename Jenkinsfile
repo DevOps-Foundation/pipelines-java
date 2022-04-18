@@ -1,6 +1,8 @@
 node {
   stage('Example') {
     checkout scm
-    sh "echo Hola Mundo"
+    withGradle {
+    sh './gradlew build'
+    }
   }
 }
