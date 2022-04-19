@@ -1,7 +1,7 @@
 node {
   stage('Example') {
     checkout scm
-    withGradle {
+    withGradle('Gradle7.2') {
     sh './gradlew build'
     }
   }
